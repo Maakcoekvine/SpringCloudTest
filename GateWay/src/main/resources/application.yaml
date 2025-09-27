@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: gate-way-app
+  #Spring cloud gateway enable
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+
+server:
+  port: 8088
+eureka:
+  instance:
+    instance-id: 127.0.0.1:${server.port}
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8000/eureka/
