@@ -28,6 +28,13 @@
             <artifactId>spring-cloud-starter-gateway</artifactId>
         </dependency>
 
+
+<!--        gate way open feign -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+
 <!--        解决spring cloud  gate 与spring boot starter web 冲突-->
         <dependency>
             <groupId>org.springframework.boot</groupId>

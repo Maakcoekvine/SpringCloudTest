@@ -16,7 +16,7 @@ public class ServiceThreeController {
     private RestTemplate restTemplate;
 
     @GetMapping("/serviceThreeToOne")
-    public JSONObject serviceThree() {
+    public JSONObject serviceThreeToOne() {
         String responseFromServiceOne = restTemplate.getForObject("http://127.0.0.1:8001/serviceOne", String.class);
 
         JSONObject jsonObject = new JSONObject();
