@@ -1,6 +1,6 @@
 spring:
   application:
-    name: gate-way-app
+    name: gateway-app
   #Spring cloud gateway enable
   cloud:
     gateway:
