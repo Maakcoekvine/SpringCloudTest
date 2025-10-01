@@ -14,6 +14,7 @@
         <module>ServiceTwo</module>
         <module>ServiceThree</module>
         <module>GateWay</module>
+        <module>ConfigCenter</module>
     </modules>
 
     <properties>

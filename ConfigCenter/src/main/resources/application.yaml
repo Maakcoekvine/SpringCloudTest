@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: config-center
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Maakcoekvine/spring-cloud-config-center.git
+          username: xxx
+          password: xxx
+          default-label: master
+          search-paths: config
+
+server:
+  port: 9001
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8000/eureka/
+  instance:
+    instance-id: 127.0.0.1:${server.port}
